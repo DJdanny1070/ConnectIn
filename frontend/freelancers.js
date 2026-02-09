@@ -1,0 +1,4 @@
+const Freelancers = {
+    init: () => {},
+    renderPage: () => {}
+};

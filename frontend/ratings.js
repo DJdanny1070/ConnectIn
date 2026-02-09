@@ -1,0 +1,1 @@
+const Ratings = { showRatingModal: () => {} };
