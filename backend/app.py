@@ -27,6 +27,10 @@ matching_service = MatchingService()
 payment_service = PaymentService()
 
 # ============= AUTHENTICATION ROUTES =============
+@app.route('/', methods=['GET'])
+def hello():
+    return "Hello "
+
 
 @app.route('/api/register', methods=['POST'])
 def register():
