@@ -1,2 +1,2 @@
-# ConnectIn
-Hackathon project 
+# Hackathon-Freelance
+Hackathon Project for freelance

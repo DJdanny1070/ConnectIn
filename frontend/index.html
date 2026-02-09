@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FreelanceIndia - Connect with Top Talent</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="container">
+            <div class="nav-brand">
+                <i class="fas fa-briefcase"></i>
+                <span>FreelanceIndia</span>
+            </div>
+            <div class="nav-menu" id="navMenu">
+                <a href="#" data-page="home" class="nav-link active">Home</a>
+                <a href="#" data-page="jobs" class="nav-link">Find Jobs</a>
+                <a href="#" data-page="freelancers" class="nav-link">Find Talent</a>
+                <a href="#" data-page="how-it-works" class="nav-link">How It Works</a>
+            </div>
+            <div class="nav-actions" id="navActions">
+                <button class="btn btn-outline" id="loginBtn">Login</button>
+                <button class="btn btn-primary" id="signupBtn">Sign Up</button>
+            </div>
+            <div class="nav-user" id="navUser" style="display: none;">
+                <button class="notification-btn" id="notificationBtn">
+                    <i class="fas fa-bell"></i>
+                    <span class="notification-badge" id="notificationBadge">0</span>
+                </button>
+                <button class="chat-btn" id="chatBtn">
+                    <i class="fas fa-comments"></i>
+                    <span class="chat-badge" id="chatBadge">0</span>
+                </button>
+                <div class="user-menu">
+                    <img src="https://ui-avatars.com/api/?name=User&background=4f46e5&color=fff" alt="User" class="user-avatar" id="userAvatar">
+                    <div class="dropdown-menu" id="userDropdown">
+                        <a href="#" data-page="dashboard"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                        <a href="#" data-page="profile"><i class="fas fa-user"></i> Profile</a>
+                        <a href="#" data-page="settings"><i class="fas fa-cog"></i> Settings</a>
+                        <hr>
+                        <a href="#" id="logoutBtn"><i class="fas fa-sign-out-alt"></i> Logout</a>
+                    </div>
+                </div>
+            </div>
+            <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main id="mainContent">
+        <!-- Home Page -->
+        <section id="homePage" class="page active">
+            <!-- Hero Section -->
+            <div class="hero">
+                <div class="container">
+                    <div class="hero-content">
+                        <h1 class="hero-title">Find Perfect <span class="gradient-text">Freelance</span> Opportunities</h1>
+                        <p class="hero-subtitle">India's most trusted platform connecting skilled freelancers with top employers</p>
+                        <div class="hero-search">
+                            <div class="search-tabs">
+                                <button class="search-tab active" data-type="jobs">Find Jobs</button>
+                                <button class="search-tab" data-type="freelancers">Find Talent</button>
+                            </div>
+                            <div class="search-container">
+                                <div class="search-input-group">
+                                    <i class="fas fa-search"></i>
+                                    <input type="text" id="heroSearch" placeholder="Search for Python, React, Design...">
+                                </div>
+                                <button class="btn btn-primary btn-lg" id="heroSearchBtn">Search</button>
+                            </div>
+                        </div>
+                        <div class="hero-stats">
+                            <div class="stat">
+                                <div class="stat-number">10K+</div>
+                                <div class="stat-label">Active Freelancers</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">5K+</div>
+                                <div class="stat-label">Jobs Posted</div>
+                            </div>
+                            <div class="stat">
+                                <div class="stat-number">₹2Cr+</div>
+                                <div class="stat-label">Total Paid Out</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Features Section -->
+            <div class="features-section">
+                <div class="container">
+                    <h2 class="section-title">Why Choose FreelanceIndia?</h2>
+                    <div class="features-grid">
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-robot"></i>
+                            </div>
+                            <h3>AI-Powered Matching</h3>
+                            <p>Smart algorithm matches you with the perfect jobs or talent based on skills, budget, and experience</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-shield-alt"></i>
+                            </div>
+                            <h3>Secure Payments</h3>
+                            <p>Escrow system with UPI, Net Banking, Cards - all Indian payment methods supported</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <h3>Real-time Chat</h3>
+                            <p>Instant messaging and video calls to discuss projects seamlessly</p>
+                        </div>
+                        <div class="feature-card">
+                            <div class="feature-icon">
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <h3>Ratings & Reviews</h3>
+                            <p>Build your reputation with verified reviews from real clients</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- How It Works -->
+            <div class="how-it-works-section">
+                <div class="container">
+                    <h2 class="section-title">How It Works</h2>
+                    <div class="steps-container">
+                        <div class="step">
+                            <div class="step-number">1</div>
+                            <h3>Create Your Profile</h3>
+                            <p>Sign up and showcase your skills, portfolio, and experience</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">2</div>
+                            <h3>Get Matched</h3>
+                            <p>Our AI finds the perfect opportunities that match your expertise</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">3</div>
+                            <h3>Start Working</h3>
+                            <p>Connect, negotiate, and begin your project with secure payments</p>
+                        </div>
+                        <div class="step">
+                            <div class="step-number">4</div>
+                            <h3>Get Paid</h3>
+                            <p>Complete work and receive payment through our escrow system</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <div class="container">
+                    <h2>Ready to Get Started?</h2>
+                    <p>Join thousands of freelancers and employers on India's fastest-growing platform</p>
+                    <div class="cta-buttons">
+                        <button class="btn btn-primary btn-lg" onclick="showSignupModal('freelancer')">Join as Freelancer</button>
+                        <button class="btn btn-outline btn-lg" onclick="showSignupModal('employer')">Hire Talent</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Jobs Page (will be loaded dynamically) -->
+        <section id="jobsPage" class="page"></section>
+
+        <!-- Freelancers Page (will be loaded dynamically) -->
+        <section id="freelancersPage" class="page"></section>
+
+        <!-- Dashboard Page (will be loaded dynamically) -->
+        <section id="dashboardPage" class="page"></section>
+
+        <!-- Profile Page (will be loaded dynamically) -->
+        <section id="profilePage" class="page"></section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>FreelanceIndia</h3>
+                    <p>Connecting talent with opportunity across India</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>For Freelancers</h4>
+                    <ul>
+                        <li><a href="#">Find Jobs</a></li>
+                        <li><a href="#">How to Get Started</a></li>
+                        <li><a href="#">Success Stories</a></li>
+                        <li><a href="#">Resources</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>For Employers</h4>
+                    <ul>
+                        <li><a href="#">Post a Job</a></li>
+                        <li><a href="#">Find Talent</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Enterprise</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 FreelanceIndia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Modals will be injected here -->
+    <div id="modalContainer"></div>
+
+    <!-- Notification Panel -->
+    <div id="notificationPanel" class="notification-panel">
+        <div class="notification-header">
+            <h3>Notifications</h3>
+            <button class="close-btn" onclick="closeNotificationPanel()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="notification-list" id="notificationList">
+            <!-- Notifications will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Chat Panel -->
+    <div id="chatPanel" class="chat-panel">
+        <div class="chat-header">
+            <h3>Messages</h3>
+            <button class="close-btn" onclick="closeChatPanel()"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-list" id="chatList">
+            <!-- Chat conversations will be loaded here -->
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="js/config.js"></script>
+    <script src="js/api.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/chat.js"></script>
+    <script src="js/jobs.js"></script>
+    <script src="js/freelancers.js"></script>
+    <script src="js/dashboard.js"></script>
+    <script src="js/profile.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/ratings.js"></script>
+    <script src="js/videocall.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
